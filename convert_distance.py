@@ -4,8 +4,11 @@ Using the format method, fill in the gaps in the convert_distance function so th
 """
 
 def convert_distance(miles):
-	km = miles * 1.6 
-	result = "{:.1f} miles equals {:.1f} km".format(miles, km)
+	km = miles * 1.6
+	if miles % 1 == 0:
+		result = "{:.0f} miles equals {:.1f} km".format(miles, km)
+	else:
+		result = "{:.1f} miles equals {:.1f} km".format(miles, km)
 	return result
 
 print(convert_distance(12)) # Should be: 12 miles equals 19.2 km
