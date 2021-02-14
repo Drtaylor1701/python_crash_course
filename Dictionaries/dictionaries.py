@@ -7,7 +7,7 @@ file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
 #file_counts = {"jpg":10, "txt":14, "csv":2,"py":23}
 
 #access a value
-print(file_counts["txt"])
+#print(file_counts["txt"])
 #returns 14
 
 #check if something is in a dictionary
@@ -29,8 +29,8 @@ print(file_counts["txt"])
 #    print(extension)
 
 #to access values, use the items method to return at tuple for each value in the dictionary of the key and value:
-#for ext, amount in file_counts.items():
-#    print("There are {} files with the {} extension".format(amount, extension))
+for ext, amount in file_counts.items():
+    print("There are {} files with the {} extension".format(amount, ext))
 
 #keys method
 #file_counts.keys()
