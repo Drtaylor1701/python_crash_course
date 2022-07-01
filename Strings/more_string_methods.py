@@ -27,6 +27,6 @@ print("Forest".isnumeric())
 print("12345".isnumeric())
 print(int("12345"))
 
-#join for concatenating
+#join for concatenating, split for splitting
 print(" ".join(['This', 'is', 'a', 'phrase', 'joined', 'by', 'spaces']))
-
+print("This is another example".split())
